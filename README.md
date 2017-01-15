@@ -78,7 +78,7 @@ code splitting, and unit testing by themselves.
 
 8. `$ git commit -m "First commit"`
 
-9. `$ git push origin master`
+9. `$ git push origin master --set-upstream`
 
 ## Usage
 

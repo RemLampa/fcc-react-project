@@ -1,0 +1,49 @@
+{
+  "name": "fcc-react-project",
+  "version": "0.1.0",
+  "description": "A simple boilerplate for Free Code Camp React projects and exercises.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors",
+    "build": "webpack -p --config webpack.config.prod.js --define process.env.NODE_ENV='\"production\"' --progress --colors",
+    "gh-pages": "gh-pages --help",
+    "deploy": "npm run build && gh-pages --dist public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ibleedfilm/fcc-react-project.git"
+  },
+  "keywords": [
+    "free code camp",
+    "react",
+    "boilerplate",
+    "webpack",
+    "github pages"
+  ],
+  "author": "Rem Lampa <rem@lansangan.com> (http://www.remlampa.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibleedfilm/fcc-react-project/issues"
+  },
+  "homepage": "https://github.com/ibleedfilm/fcc-react-project#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "clean-webpack-plugin": "^0.1.15",
+    "css-loader": "^0.26.1",
+    "gh-pages": "^0.12.0",
+    "html-webpack-plugin": "^2.26.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

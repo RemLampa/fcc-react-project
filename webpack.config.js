@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const buildEntryPoint = entryPoint => {
   return [
@@ -15,7 +16,8 @@ const plugins = [
     name: 'commons',
     filename: 'common.js'
   }),
-  new webpack.HotModuleReplacementPlugin()
+  new webpack.HotModuleReplacementPlugin(),
+  new ExtractTextPlugin('app.css')
 ];
 
 module.exports = {
@@ -36,9 +38,11 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
-        test: /\.css$/,
-        loader: 'style!css'
-      }
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+          'style',
+          'css?sourceMap!sass?sourceMap'
+        )      }
     ]
   },
   resolve: {

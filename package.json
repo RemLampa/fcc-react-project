@@ -38,6 +38,7 @@
     "babel-preset-stage-1": "^6.16.0",
     "clean-webpack-plugin": "^0.1.15",
     "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gh-pages": "^0.12.0",
     "html-webpack-plugin": "^2.26.0",
     "node-sass": "^4.3.0",

@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const project = require('./project.config.json');
 
@@ -17,7 +18,8 @@ const plugins = [
     template: 'index_template.ejs',
     inject: true,
     hash: true
-  })
+  }),
+  new ExtractTextPlugin('css/app.css')
 ];
 
 module.exports = {
@@ -38,8 +40,11 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
-        test: /\.css$/,
-        loader: 'style!css'
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract(
+          'style',
+          'css?sourceMap!sass?sourceMap'
+        )
       }
     ]
   },

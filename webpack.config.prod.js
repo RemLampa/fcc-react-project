@@ -15,7 +15,8 @@ const plugins = [
     title: project.title,
     filename: '../index.html',
     template: 'index_template.ejs',
-    inject: true
+    inject: true,
+    hash: true
   })
 ];
 

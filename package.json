@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack-dev-server --progress",
     "build": "webpack -p --config webpack.config.prod.js --define process.env.NODE_ENV='\"production\"' --progress --colors",
-    "gh-pages": "gh-pages --help",
     "deploy": "npm run build && gh-pages --dist public"
   },
   "repository": {
@@ -18,7 +17,8 @@
     "react",
     "boilerplate",
     "webpack",
-    "github pages"
+    "github pages",
+    "sass"
   ],
   "author": "Rem Lampa <rem@lansangan.com> (http://www.remlampa.com)",
   "license": "MIT",

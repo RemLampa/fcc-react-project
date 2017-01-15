@@ -4,7 +4,7 @@
   "description": "A simple boilerplate for Free Code Camp React projects and exercises.",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors",
+    "start": "webpack-dev-server --progress",
     "build": "webpack -p --config webpack.config.prod.js --define process.env.NODE_ENV='\"production\"' --progress --colors",
     "gh-pages": "gh-pages --help",
     "deploy": "npm run build && gh-pages --dist public"

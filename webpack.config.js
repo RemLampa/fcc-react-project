@@ -51,6 +51,9 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'dev'),
     hot: true,
     inline: true,
+    stats: {
+      colors: true
+    },
     port: 3000
   },
   devtool: 'source-map'

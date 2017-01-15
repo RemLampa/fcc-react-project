@@ -52,7 +52,13 @@ module.exports = {
     hot: true,
     inline: true,
     stats: {
-      colors: true
+      assets: true,
+      colors: true,
+      version: false,
+      hash: false,
+      timings: true,
+      chunks: false,
+      chunkModules: false
     },
     port: 3000
   },

@@ -1,0 +1,1 @@
+{"version":3,"file":"css/app.css","sources":["webpack:////./src/App/src/App/app.scss"],"sourcesContent":["$main-font-color: #333333;\n\nbody {\n  color: $main-font-color;\n}\n\n\n\n// WEBPACK FOOTER //\n// /./src/App/src/App/app.scss"],"mappings":"AAEA","sourceRoot":""}

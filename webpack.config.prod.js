@@ -47,5 +47,6 @@ module.exports = {
     root: [ path.resolve(__dirname, 'src') ],
     extensions: ['', '.js', '.jsx'],
   },
-  plugins: plugins
+  plugins: plugins,
+  devtool: 'cheap-module-source-map'
 };

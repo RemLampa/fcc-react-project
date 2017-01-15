@@ -4,7 +4,7 @@ import { AppContainer } from 'react-hot-loader';
 
 import App from './App';
 
-const rootElement = document.querySelector('.app');
+const rootElement = document.getElementById('app');
 
 ReactDOM.render(
   <AppContainer>

@@ -3,8 +3,8 @@
 A simple boilerplate for [Free Code Camp](https://www.freecodecamp.com) React
 projects and exercises.
 
-Features **Webpack Dev Server**, **Hot React Module Reloading**, **SASS**, and **GitHub
-Pages Deployment.**
+Features **Webpack Dev Server**, **Hot React Module Reloading**, **SASS**,
+**Bootstrap** and **GitHub Pages Deployment.**
 
 ## Rationale
 
@@ -15,7 +15,8 @@ most employers would want to see code in an applicant's GitHub profiles.
 This project aims to provide the Free Code Camp students the tool to use GitHub
 and GitHub Pages instead of Codepen as a showcase for their React projects,
 exercises, and experiments to further bolster their chances at landing that
-dream dev job.
+dream dev job. This results in the student's project having its own website
+accessible at https://username.github.io/project-name.
 
 The project has only the bare essentials to showcase a project in its own GitHub
 page. Students will still need to set up features like `react-router`, `redux`,
@@ -90,6 +91,14 @@ it in GitHub Pages which can be accessed at `https://your-username.github.io/you
 
 - React source files reside in `src` folder. For the most part, this should be
 your working folder.
+
+- Styles may use SASS `*.scss` format.
+
+- If Bootstrap is needed, it may be imported by adding the following code at the top of the main SCSS file.
+
+  `$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';`
+
+  `@import '~bootstrap-sass/assets/stylesheets/bootstrap';`
 
 - `webpack.config.js` is the configuration file for Webpack Dev Server
 

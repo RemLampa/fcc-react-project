@@ -15,8 +15,11 @@ most employers would want to see code in an applicant's GitHub profiles.
 This project aims to provide the Free Code Camp students the tool to use GitHub
 and GitHub Pages instead of Codepen as a showcase for their React projects,
 exercises, and experiments to further bolster their chances at landing that
-dream dev job. This results in the student's project having its own website
-accessible at https://username.github.io/project-name.
+dream dev job. At the same time, students will become more accustomed to
+development tools like the command line, Git, NPM, and Webpack.
+
+Usage of this boilerplate results in the student's project having its own website
+hosted at https://username.github.io/project-name.
 
 The project has only the bare essentials to showcase a project in its own GitHub
 page. Students will still need to set up features like `react-router`, `redux`,

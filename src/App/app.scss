@@ -1,3 +1,8 @@
+// begin bootstrap-sass imports
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+// end bootstrap-sass imports
+
 $main-font-color: #333333;
 
 body {

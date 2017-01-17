@@ -4,6 +4,6 @@ import './app.scss';
 
 export default class App extends Component {
   render() {
-    return <div>Hello World!</div>;
+    return <h1 className='text-primary text-center'>Hello World!</h1>;
   }
 }

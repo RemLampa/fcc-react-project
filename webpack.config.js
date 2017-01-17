@@ -17,7 +17,7 @@ const plugins = [
     filename: 'common.js'
   }),
   new webpack.HotModuleReplacementPlugin(),
-  new ExtractTextPlugin('app.css')
+  new ExtractTextPlugin('app.css'),
 ];
 
 module.exports = {
@@ -38,11 +38,16 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
+        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+        loader: "file"
+      },
+      {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(
           'style',
           'css?sourceMap!sass?sourceMap'
-        )      }
+        )
+      }
     ]
   },
   resolve: {

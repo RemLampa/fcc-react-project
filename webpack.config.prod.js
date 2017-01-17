@@ -40,6 +40,10 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
+        test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
+        loader: "file"
+      },
+      {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(
           'style',

@@ -97,11 +97,13 @@ your working folder.
 
 - Styles may use SASS `*.scss` format.
 
-- If Bootstrap is needed, it may be imported by adding the following code at the top of the main SCSS file.
+- If Bootstrap is needed, it may be imported by adding the following code at the top of the main SCSS file:
 
-  `$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';`
+  ```sass
+  $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
-  `@import '~bootstrap-sass/assets/stylesheets/bootstrap';`
+  @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+  ```
 
 - `webpack.config.js` is the configuration file for Webpack Dev Server
 

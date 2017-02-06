@@ -1,6 +1,6 @@
 {
   "name": "fcc-react-project",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "A simple boilerplate for Free Code Camp React projects and exercises.",
   "main": "src/index.js",
   "scripts": {

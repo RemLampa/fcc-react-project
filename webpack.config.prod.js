@@ -23,6 +23,7 @@ const plugins = [
 ];
 
 module.exports = {
+  context: path.resolve(__dirname, './'),
   entry: {
     'app': './src'
   },
@@ -32,36 +33,42 @@ module.exports = {
     filename: 'js/[name].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel',
+        exclude: [/node_modules/],
+        use: 'babel-loader',
         include: path.join(__dirname, 'src')
       },
       {
         test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/,
-        loader: "file"
+        use: "file-loader"
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          'style',
-          'css?sourceMap!sass?sourceMap'
-        )
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader?sourceMap',
+            'sass-loader?sourceMap'
+          ]
+        })
       },
       {
         test: /\.css$/,
-        loaders: [
-          'style',
-          'css?sourceMap'
+        use: [
+          'style-loader',
+          'css-loader?sourceMap'
         ]
       }
     ]
   },
   resolve: {
-    root: [ path.resolve(__dirname, 'src') ],
-    extensions: ['', '.js', '.jsx'],
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules'
+    ],
+    extensions: ['.js', '.jsx'],
   },
   plugins: plugins,
   devtool: 'cheap-module-source-map'
